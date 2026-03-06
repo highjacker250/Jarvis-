@@ -5,4 +5,8 @@
     <string name="jarvis_listening">Jarvis Listening...</string>
     <string name="settings">Settings</string>
 
+    <string name="accessibility_description">
+        Jarvis needs this for full device control
+    </string>
+
 </resources>
