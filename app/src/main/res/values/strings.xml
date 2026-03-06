@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Jarvis AI</string>
+    <string name="jarvis_ready">Jarvis Ready</string>
+    <string name="jarvis_listening">Jarvis Listening...</string>
+    <string name="settings">Settings</string>
+
+</resources>
