@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:text="Jarvis Ready"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/micButton"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@null"/>
+    
+    <com.jarvis.assistant.ui.WaveformView
+    android:id="@+id/waveform"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"/>
+</LinearLayout>
