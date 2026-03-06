@@ -1,7 +1,0 @@
-<resources>
-
-    <style name="Theme.Jarvis" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/jarvis_black</item>
-    </style>
-
-</resources>
