@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Jarvis AI</string>
-    <string name="jarvis_ready">Jarvis Ready</string>
-    <string name="jarvis_listening">Jarvis Listening...</string>
-    <string name="settings">Settings</string>
-
-    <string name="accessibility_description">
-        Jarvis needs this for full device control
-    </string>
-
+    <string name="accessibility_description">Jarvis ko full device control ke liye Accessibility Service chahiye. Isse Jarvis screenshot le sakta hai, app navigate kar sakta hai aur aapki madad kar sakta hai.</string>
+    <string name="mic_hint">Mic tap karein ya "Hey Jarvis" bolein</string>
+    <string name="listening">Listening…</string>
+    <string name="processing">Processing…</string>
+    <string name="ready">Ready</string>
+    <string name="settings_title">Jarvis Settings</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="assistant_name_hint">Assistant ka naam (default: Jarvis)</string>
+    <string name="user_name_hint">Aapka naam</string>
+    <string name="api_key_hint">OpenRouter API Key (optional, free)</string>
 </resources>
