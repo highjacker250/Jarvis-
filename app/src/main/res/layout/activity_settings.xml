@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jarvis_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="80dp">
+
+        <!-- USER NAME -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Aapka Naam" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="4dp"/>
+        <EditText android:id="@+id/et_user_name" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/user_name_hint"
+            android:textColor="@color/jarvis_white" android:textColorHint="@color/jarvis_white_30"
+            android:inputType="textPersonName" android:backgroundTint="@color/jarvis_cyan"
+            android:textSize="16sp" android:paddingBottom="12dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- ASSISTANT NAME -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Assistant Ka Naam" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="4dp"/>
+        <EditText android:id="@+id/et_assistant_name" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/assistant_name_hint"
+            android:textColor="@color/jarvis_white" android:textColorHint="@color/jarvis_white_30"
+            android:inputType="textPersonName" android:backgroundTint="@color/jarvis_cyan"
+            android:textSize="16sp" android:paddingBottom="12dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- VOICE GENDER -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Voice Gender" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+        <RadioGroup android:id="@+id/rg_voice_gender" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rb_male" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Male" android:textColor="@color/jarvis_white"
+                android:buttonTint="@color/jarvis_cyan"/>
+            <RadioButton android:id="@+id/rb_female" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Female" android:textColor="@color/jarvis_white"
+                android:buttonTint="@color/jarvis_cyan"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- PERSONALITY -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Personality Style" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+        <RadioGroup android:id="@+id/rg_personality" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <RadioButton android:id="@+id/rb_professional" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Professional (Default)"
+                android:textColor="@color/jarvis_white" android:buttonTint="@color/jarvis_cyan"/>
+            <RadioButton android:id="@+id/rb_casual" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Friendly &amp; Casual"
+                android:textColor="@color/jarvis_white" android:buttonTint="@color/jarvis_cyan"/>
+            <RadioButton android:id="@+id/rb_funny" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Funny &amp; Witty"
+                android:textColor="@color/jarvis_white" android:buttonTint="@color/jarvis_cyan"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- SPEECH RATE -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Speech Rate" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="4dp"/>
+        <SeekBar android:id="@+id/sb_speech_rate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="10" android:progress="5"
+            android:progressTint="@color/jarvis_cyan" android:thumbTint="@color/jarvis_cyan"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- API KEY -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="OpenRouter API Key (FREE)" android:textColor="@color/jarvis_cyan"
+            android:textSize="14sp" android:textStyle="bold" android:paddingBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="openrouter.ai se free key lo — AI responses better honge"
+            android:textColor="@color/jarvis_white_60" android:textSize="12sp" android:paddingBottom="8dp"/>
+        <EditText android:id="@+id/et_api_key" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/api_key_hint"
+            android:textColor="@color/jarvis_white" android:textColorHint="@color/jarvis_white_30"
+            android:inputType="textVisiblePassword" android:backgroundTint="@color/jarvis_cyan"
+            android:textSize="13sp" android:paddingBottom="12dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/jarvis_white_30" android:layout_marginVertical="16dp"/>
+
+        <!-- SAVE BUTTON -->
+        <Button android:id="@+id/btn_save_settings"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Settings Save Karo ✓" android:textSize="16sp"
+            android:textColor="@color/black" android:backgroundTint="@color/jarvis_cyan"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- DANGER BUTTONS -->
+        <Button android:id="@+id/btn_clear_memory"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Memory Clear Karo" android:textSize="14sp"
+            android:textColor="@color/jarvis_orange" android:backgroundTint="#1FFFFF00"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btn_clear_face"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Face Data Clear Karo" android:textSize="14sp"
+            android:textColor="@color/jarvis_orange" android:backgroundTint="#1FFFFF00"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btn_reset_setup"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Full Reset" android:textSize="14sp"
+            android:textColor="@color/jarvis_red" android:backgroundTint="#1FFF0000"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>
